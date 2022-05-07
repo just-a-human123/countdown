@@ -1,4 +1,5 @@
 import React from 'react';
+import { Div } from './style/style';
 import CountdownTimer from './components/timer';
 
  function App() {
@@ -10,7 +11,7 @@ import CountdownTimer from './components/timer';
   const dateTimeAfterSevenDays = NOW_IN_MS + SEVEN_DAYS_IN_MS;
 
   return (
-    <div>
+    <div className={Div}>
       <h1>Countdown Timer</h1>
 
       <h2>Expires after 3 days!!!</h2>
