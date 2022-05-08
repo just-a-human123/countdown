@@ -16,8 +16,11 @@ const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
     <div className={countDownStyle}>
         <DateTimeDisplay value={days} type={'Days'} isDanger={days <= 3} />
+        <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
         <DateTimeDisplay value={hours} type={'Hours'} isDanger={false} />
+        <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
         <DateTimeDisplay value={minutes} type={'Mins'} isDanger={false} />
+        <spacer type="horizontal" width="100" height="100"> ♢ </spacer>
         <DateTimeDisplay value={seconds} type={'Seconds'} isDanger={false} />
     </div>
   );
